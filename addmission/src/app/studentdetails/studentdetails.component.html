@@ -1,0 +1,35 @@
+<form>
+
+  <div class="form-group">
+  <label for="StudName">Student Name</label>
+  <input required ngModel name="StudName" #name="ngModel" id="StudName"  type="text" class="form-control">
+  
+  <label for="Add">Address</label>
+  <input required ngModel name1="Add" #name1="ngModel" id="Add" (change)="LogChange(name1)" type="text" class="form-control">
+    
+  <label >Gender</label>
+  
+  <div class="radio">
+    <label><input type="radio" name="male">Male</label>
+  </div>
+  <div class="radio">
+    <label><input type="radio" name="Female">Female</label>
+  </div>
+    
+  <label for="Mob">Mobile No</label>
+  <input required ngModel name="Mob" #name="ngModel" id="Mob"  type="number" maxlength="10"   class="form-control">
+    
+  <label for="Clgname">College Name</label>
+  <input required ngModel name="Clgname" #name="ngModel" id="Clgname"  type="text" class="form-control">
+    
+  <label for="Email">Email Id</label>
+    <input  required ngModel name="Email" #name="ngModel" id="Email" type="email" class="form-control">
+    
+  <label for="Batch">Batch Name</label>
+  <input required ngModel name="Batch" #name="ngModel" id="Batch"  type="text" class="form-control">
+    
+
+</div>
+
+
+</form>

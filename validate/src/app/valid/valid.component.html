@@ -1,0 +1,22 @@
+
+
+
+<form>
+  <div class="form-group">
+  <label for="UserName">Username </label>
+  <input required ngModel name="UserName" #name="ngModel" id="UserName" (change)="LogChange(name)" type="text" class="form-control">
+    <div class="alert alert-danger" *ngIf="!name.valid">user Name is Compulsory.</div>
+</div>
+</form>
+
+<form>
+<div class="form-group">
+  <label for="password">Password</label>
+  <input required ngModel name1="pwd" #name1="ngModel" id="password" (change)="LogChange(name1)" type="password" class="form-control">
+ </div>
+
+ <div>
+<button class="btn btn-primary">Submit</button>
+</div>
+
+</form>
